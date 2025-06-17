@@ -1,0 +1,46 @@
+{
+  "hotelName": "Grand City Hotel",
+  "checkInDate": "2024-05-15",
+  "checkOutDate": "2024-05-20",
+  "guests": [
+    {
+      "name": "Alice Johnson",
+      "age": 30,
+      "email": "alice.johnson@example.com"
+    },
+    {
+      "name": "Bob Smith",
+      "age": null,
+      "email": "bob.smith@example"
+    }
+  ],
+  "roomDetails": {
+    "type": "Suite",
+    "pricePerNight": 200,
+    "amenities": ["WiFi", "Breakfast", "Parking"]
+  }
+}
+
+    // 1) removed the backticks - JSON does not read backticks
+    // 2) deleted the invalidBookingJSON declaration - that is only for JavaScript to read
+    // 3) added a comma to checkInDate - JSON will give a syntax error
+    // 4) added quotations in the name key for Alice Johnson - even keys need to be in strings
+    // 5) change the value from undefined to null - JSON doesn't read undefined
+    // 6) deleted the trailing comma in the array of amenities. - it invalid in JSON to have extra commas
+
+    // ============================================
+// 🤔 Follow-Up Questions
+// ============================================
+
+/*
+💬 Reflect and answer the following:
+
+1️⃣ What tools or techniques did you use to identify the errors?  First I looked at the code to see if there were any obvious mistakes, and then looked for any syntax errors within the VS codes error handling and made sure I didn't have anymore red lines under the code.
+
+2️⃣ How did you confirm that your corrected JSON file was valid? I used the Code Beautify website and pasted the code to comfirm it was valid
+
+3️⃣ Which errors were the most difficult to spot? Why? In this particular example locating the errors were not too difficult, but when creating my own JSON object file, I had trouble with extra curly braces
+
+4️⃣ What strategies can help you avoid these kinds of errors in the future? I felt that formating would be a big one, just to keep all the curly braces and brackets in line and closing on the correct objects or arrays.
+   (e.g., syntax highlighting, linters, writing JSON by example)
+*/
